@@ -1,8 +1,3 @@
-# pip install llama-index llama-index-vector-stores-qdrant llama-index-embeddings-langchain
-# pip install qdrant-client
-# pip install requests numpy
-# (TEI için: ghcr.io/huggingface/text-embeddings-inference imajı ve modeliniz 8082'de çalışıyor varsayılmıştır)
-
 from qdrant_client import QdrantClient
 from qdrant_client.http.models import VectorParams, Distance
 from llama_index.vector_stores.qdrant import QdrantVectorStore
