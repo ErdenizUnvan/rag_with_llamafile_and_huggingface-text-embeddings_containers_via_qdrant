@@ -1,5 +1,5 @@
-#Text-embeddings modeli için: http://10.1.100.45:8082  (BGE-large 1024-d)
-#qdrant: 10.1.100.45:6333 
+#Text-embeddings modeli için: http://docker host IP:8082  (BGE-large 1024-d)
+#qdrant:  http://docker host IP:6333 
 from qdrant_client import QdrantClient
 from qdrant_client.http.models import VectorParams, Distance
 from llama_index.vector_stores.qdrant import QdrantVectorStore
