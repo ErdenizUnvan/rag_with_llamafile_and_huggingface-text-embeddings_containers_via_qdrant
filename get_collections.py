@@ -1,4 +1,4 @@
-#pip install qdrant_client
+#qdrant:  http://docker host IP:6333 
 from qdrant_client import QdrantClient
 
 # Qdrant'a bağlan
