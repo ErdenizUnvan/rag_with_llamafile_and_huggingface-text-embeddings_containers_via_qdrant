@@ -1,6 +1,4 @@
-# pip install qdrant-client llama_index langchain langchain-community requests numpy
 # TEI sunucusu: http://10.1.100.45:8082  (BGE-large 1024-d)
-
 from qdrant_client import QdrantClient
 from llama_index.vector_stores.qdrant import QdrantVectorStore
 from llama_index.core import Settings, VectorStoreIndex, StorageContext
