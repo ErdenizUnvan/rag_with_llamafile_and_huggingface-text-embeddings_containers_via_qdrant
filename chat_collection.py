@@ -1,4 +1,6 @@
-# TEI sunucusu: http://10.1.100.45:8082  (BGE-large 1024-d)
+#Text-embeddings modeli için: http://docker host IP:8082  (BGE-large 1024-d)
+#qdrant:  http://docker host IP:6333 
+#metinden metin üreten model için: ttp://docker host IP::8081/v1
 from qdrant_client import QdrantClient
 from llama_index.vector_stores.qdrant import QdrantVectorStore
 from llama_index.core import Settings, VectorStoreIndex, StorageContext
