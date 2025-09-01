@@ -12,6 +12,14 @@ docker pull eunvan/qwen2.5-llamafile:latest
 
 docker container run --name my-rag-llm -d --rm -p 8081:8080 eunvan/qwen2.5-llamafile:latest
 
+docker volume create qdrant_storage
+
+docker run -d \
+  --name qdrant \
+  -p 6333:6333 \
+  -v qdrant_storage:/qdrant/storage \
+  qdrant/qdrant
+
 @for windows pc:
 
 pip install -r requirements.txt
